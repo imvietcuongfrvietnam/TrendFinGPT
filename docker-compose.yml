@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./data/db:/data/db
+    networks:
+      - internal_net
+    env_file:
+      - .env
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pg-init.sql:/docker-entrypoint-initdb.d/pg_init.sql:ro
+      - ./data/sql:/var/lib/postgresql/data
+    env_file:
+      - .env
+    networks:
+      - internal_net
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.4
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+    volumes:
+    - ./data/esdata:/usr/share/elasticsearch/data
+    networks:
+      - internal_net
+
+  ubuntu:
+    build: .  # Chọn version Ubuntu bạn muốn
+    container_name: ubuntu
+    command: ["sleep", "infinity"]  # Giữ cho container chạy liên tục
+    networks:
+      - internal_net
+    volumes:
+      - ./scripts:/scripts  # Nếu có bất kỳ script nào muốn chạy trong Ubuntu
+    stdin_open: true         # Mở terminal vào container
+    tty: true                # Cho phép chạy các lệnh như terminal
+
+networks:
+  internal_net:
+    driver: bridge

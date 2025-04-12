@@ -1,0 +1,9 @@
+.env
+
+# Dữ liệu của database - không nên push vì nặng và không cần thiết
+data/
+data/*
+
+# Script tạm hoặc nội bộ không cần đẩy lên Git
+scripts/
+scripts/*
