@@ -7,3 +7,8 @@ data/*
 # Script tạm hoặc nội bộ không cần đẩy lên Git
 scripts/
 scripts/*
+
+ds-prj/
+ivy2/
+chatbot/*.json
+node_modules/
