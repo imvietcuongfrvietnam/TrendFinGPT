@@ -1,0 +1,92 @@
+/* src/styles/Chat.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;         /* fill the entire viewport */
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #fafafa;
+}
+
+.chat-header {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* This will take up all the space left by the header + input area */
+.chat-window {
+  flex: 1 1 auto;        /* grow and shrink as needed */
+  overflow-y: auto;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.chat-message {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.chat-message-user {
+  justify-content: flex-end;
+}
+.chat-message-bot {
+  justify-content: flex-start;
+}
+
+.chat-bubble {
+  padding: 0.5rem 0.75rem;
+  border-radius: 16px;
+  max-width: 75%;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.chat-message-user .chat-bubble {
+  background: #dcf8c6;
+}
+.chat-message-bot .chat-bubble {
+  background: #f1f0f0;
+}
+
+.chat-input-area {
+  flex: 0 0 auto;       /* don’t grow or shrink */
+  display: flex;
+  align-items: center;
+}
+
+.chat-textarea {
+  flex: 1;
+  padding: 0.5rem;
+  resize: none;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.chat-send-button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.chat-send-button:hover {
+  background: #45a049;
+}
+.chat-send-button:active {
+  background: #3e8e41;
+}
