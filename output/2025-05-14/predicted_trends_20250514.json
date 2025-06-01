@@ -1,0 +1,162 @@
+[
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 1,
+        "keyword": "vận_hành",
+        "base_trend_score": 240.0,
+        "predicted_score_for_target_date": 240.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 2,
+        "keyword": "krx",
+        "base_trend_score": 195.75,
+        "predicted_score_for_target_date": 195.75
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 3,
+        "keyword": "cổ_phiếu",
+        "base_trend_score": 190.92,
+        "predicted_score_for_target_date": 190.92
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 4,
+        "keyword": "giao_thông",
+        "base_trend_score": 190.0,
+        "predicted_score_for_target_date": 190.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 5,
+        "keyword": "sự_nghiệp",
+        "base_trend_score": 153.0,
+        "predicted_score_for_target_date": 153.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 6,
+        "keyword": "giao_dịch",
+        "base_trend_score": 152.19,
+        "predicted_score_for_target_date": 152.19
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 7,
+        "keyword": "hệ_thống",
+        "base_trend_score": 151.63,
+        "predicted_score_for_target_date": 151.63
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 8,
+        "keyword": "chính_sách",
+        "base_trend_score": 132.0,
+        "predicted_score_for_target_date": 132.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 9,
+        "keyword": "thị_trường",
+        "base_trend_score": 92.86,
+        "predicted_score_for_target_date": 92.86
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 10,
+        "keyword": "ctcp",
+        "base_trend_score": 91.67,
+        "predicted_score_for_target_date": 91.67
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 11,
+        "keyword": "diễn",
+        "base_trend_score": 91.0,
+        "predicted_score_for_target_date": 91.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 12,
+        "keyword": "tăng",
+        "base_trend_score": 88.26,
+        "predicted_score_for_target_date": 88.26
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 13,
+        "keyword": "giá_trị",
+        "base_trend_score": 88.2,
+        "predicted_score_for_target_date": 88.2
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 14,
+        "keyword": "ưu_đãi",
+        "base_trend_score": 84.0,
+        "predicted_score_for_target_date": 84.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 15,
+        "keyword": "mạnh",
+        "base_trend_score": 79.28,
+        "predicted_score_for_target_date": 79.28
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 16,
+        "keyword": "phiên",
+        "base_trend_score": 78.0,
+        "predicted_score_for_target_date": 78.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 17,
+        "keyword": "thông_minh",
+        "base_trend_score": 78.0,
+        "predicted_score_for_target_date": 78.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 18,
+        "keyword": "đàm_phán",
+        "base_trend_score": 78.0,
+        "predicted_score_for_target_date": 78.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 19,
+        "keyword": "trừ",
+        "base_trend_score": 78.0,
+        "predicted_score_for_target_date": 78.0
+    },
+    {
+        "prediction_generated_date": "2025-05-14",
+        "target_forecast_date": "2025-05-15",
+        "rank": 20,
+        "keyword": "ròng",
+        "base_trend_score": 73.18,
+        "predicted_score_for_target_date": 73.18
+    }
+]

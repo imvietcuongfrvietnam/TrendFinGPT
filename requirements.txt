@@ -1,0 +1,8 @@
+pandas
+nltk
+# underthesea
+scikit-learn
+python-dotenv
+wordcloud
+matplotlib
+Pillow

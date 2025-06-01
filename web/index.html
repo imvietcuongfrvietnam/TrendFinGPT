@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Đoán Keyword Trending</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dự Đoán Từ Khóa Xu Hướng</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <label for="startDate">Chọn ngày bắt đầu:</label>
+            <input type="date" id="startDate">
+            <button id="loadTrendsButton">Dự đoán từ khóa trend</button>
+        </div>
+        <div id="trends-container">
+            <!-- Kết quả (bao gồm Word Clouds) sẽ được chèn vào đây -->
+        </div>
+        <div id="loading-indicator" style="display:none;">Đang tải dữ liệu...</div>
+        <div id="error-message" style="color:red; display:none;"></div> 
+    </main>
+
+    <!-- Nạp thư viện wordcloud2.js TRƯỚC script.js -->
+    <script src="wordcloud2.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

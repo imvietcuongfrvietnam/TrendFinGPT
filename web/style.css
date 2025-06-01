@@ -1,0 +1,168 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font hiện đại hơn */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Màu nền nhẹ nhàng */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(90deg, #55c0ed, #2dd9e2); /* Gradient tím */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300; /* Chữ mảnh hơn */
+}
+
+.controls {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: inline-block; /* Để căn giữa dễ hơn */
+}
+
+.controls label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.controls input[type="date"], .controls button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.controls button {
+    background-color: #2dbbe2; /* Màu tím nút */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #009de0; /* Màu tím đậm hơn khi hover */
+}
+
+#trends-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 0 20px; /* Thêm padding cho container chính */
+    width: 100%;
+    max-width: 1400px; /* Giới hạn chiều rộng tối đa */
+    box-sizing: border-box;
+}
+
+.day-prediction {
+    background: #ffffff;
+    border: none; /* Bỏ border cũ */
+    border-radius: 10px; /* Bo góc nhiều hơn */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Shadow nổi bật hơn */
+    width: calc(33.333% - 25px); /* 3 cột, điều chỉnh dựa trên gap */
+    min-width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.day-prediction:hover {
+    transform: translateY(-5px); /* Nâng nhẹ lên khi hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.day-prediction h3 {
+    margin-top: 0;
+    color: #4A00E0; /* Màu tím cho tiêu đề ngày */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wordcloud-canvas-container { /* Container cho canvas wordcloud */
+    width: 100%;
+    height: 250px; /* Chiều cao cố định cho wordcloud */
+    margin-bottom: 15px;
+    border: 1px dashed #e0e0e0; /* Border cho khu vực wordcloud */
+    border-radius: 5px;
+    display: flex; /* Để căn giữa canvas nếu nó nhỏ hơn */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Tránh wordcloud tràn ra ngoài nếu lớn */
+}
+/* wordcloud2.js sẽ tạo canvas bên trong div này */
+
+
+.day-prediction ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Thêm khoảng cách sau wordcloud */
+    flex-grow: 1; /* Để ul chiếm không gian còn lại */
+}
+
+.day-prediction li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex; /* Để rank và keyword trên cùng hàng */
+    justify-content: space-between; /* Đẩy score sang phải */
+    align-items: center;
+}
+
+.day-prediction li:last-child {
+    border-bottom: none;
+}
+
+.keyword-rank {
+    color: #8E2DE2;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.keyword {
+    font-weight: 500;
+    color: #333;
+}
+
+.score {
+    color: #888;
+    font-size: 0.85em;
+    background-color: #f9f9f9; /* Nền nhẹ cho score */
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+#loading-indicator, #error-message {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+#error-message {
+    color: #D8000C; /* Màu đỏ cho lỗi */
+    background-color: #FFD2D2; /* Nền đỏ nhạt */
+}
